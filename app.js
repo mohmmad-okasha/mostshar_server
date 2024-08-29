@@ -27,7 +27,7 @@ global.db = mongoose; // Consider dependency injection for better practices
 import usersRouter from './routes/users.js';
 import loginRouter from './routes/login.js';
 import logsRouter from './routes/logs.js';
-// import hotelsRouter from './routes/hotels.js';
+import accountsRouter from './routes/accounts.js';
 // import bookingsRouter from './routes/bookings.js';
 // import roomsRouter from './routes/rooms.js';
 // import availableHotelsRouter from './routes/availableHotels.js';
@@ -36,7 +36,7 @@ import logsRouter from './routes/logs.js';
 app.use('/users', usersRouter);
 app.use('/login', loginRouter);
 app.use('/logs', logsRouter);
-// app.use('/hotels', hotelsRouter);
+app.use('/accounts', accountsRouter);
 // app.use('/bookings', bookingsRouter);
 // app.use('/rooms', roomsRouter);
 // app.use('/availableHotels', availableHotelsRouter);
