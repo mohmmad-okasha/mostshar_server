@@ -7,7 +7,8 @@ const UsersSchema = new mongoose.Schema({
     password: { type: String },
     rules: { type: Object },
     active: { type: Boolean }
-})
+}, { timestamps: true })
+
 
 const userModel = mongoose.model("users", UsersSchema)
 

@@ -10,7 +10,7 @@ const AccountsSchema = new mongoose.Schema({
     notes: { type: String },
     user: { type: String }
 
-})
+}, { timestamps: true })
 
 const accountModel = mongoose.model("accounts", AccountsSchema)
 
